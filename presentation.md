@@ -1,15 +1,45 @@
 ---
 theme: "black"
 transition: "slide"
-slideNumber: false
+slideNumber: true
 title: "プリンシプルになろう"
 
 ---
 
 ## プリンシプルになろう
 
-```c
+<span style="font-size:20px;">上田勲. プリンシプル オブ プログラミング 3年目までに身につけたい 一生役立つ101の原理原則 (Japanese Edition)</span>
+
+---
+
+```javascript
 declear your code
+```
+
+```javascript
+var div = document.createElement("div");
+```
+
+どっちが重要だと思いますか？
+
+---
+
+拡張性の担保
+
+```javascript
+
+[
+  {
+    val1:"hoge",
+    val2:"huga",
+    valueGenerator:(oldval)=>{return newval(oldval)},
+  },
+  {
+  ......
+  },
+  ...
+]
+
 ```
 
 ---
@@ -58,3 +88,9 @@ declear your code
 沈黙は金ソフトウェアは、極力表示出力を抑えるようにします。
 
 > 上田勲. プリンシプル オブ プログラミング 3年目までに身につけたい 一生役立つ101の原理原則 (Japanese Edition) (p.257). Kindle 版.
+
+---
+
+- 実用的なコード例は自分で考える
+
+---
