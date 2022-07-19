@@ -48,15 +48,86 @@ var div = document.createElement("div");
 
 ---
 
+
+### 課題
+
+- 最初の課題 
+  - jsonplace holder 10users 使って
+
+
+
+---
+
+今回はこれを使用します。
+
+[jsonplaceholderusers](https://jsonplaceholder.typicode.com/users "jsonplaceholderusers")
+
+
+```json
+ {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }
+
+```
+
+--
+
+--- 
+課題
+
+- 選択したユーザーを対象に位置が近い順にソートする関数の作成を文芸的プログラミングで記述
+  意識すること
+
+  - 拡張性を持たせる
+  - まずは動くものを
+  
+- 決まり
+
+- 関数は引数とか返り値を指定（型と何を表すのか）
+  
+
+```(例)
+
+```
+
+---
+
+
+- 一旦出してもう一回要件を足す
+
+- 
+
+---
+
 本発表で伝えること
 
 - まず意識することを伝えて実際に描いてもらう
-  - ああああ
+  - 
 
 - 同様に他のことを説明して同じ題材で書いてもらう
   - どっちが良いか話し合ってもらう
 
-- 発表　オチによりよりやり方を見つけましょう結論付ける
+- 発表　オチによりよいやり方を見つけましょう結論付ける
 
 - おまけ
   - プログラマに課金することが重要
