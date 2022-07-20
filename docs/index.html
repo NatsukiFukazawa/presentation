@@ -72,7 +72,308 @@
         <section >
             
             <h2>プリンシプルになろう</h2>
-<pre><code class="language-c">declear your code
+<p><span style="font-size:20px;">上田勲. プリンシプル オブ プログラミング 3年目までに身につけたい 一生役立つ101の原理原則</span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>本発表の目的</h3>
+<ul>
+<li>
+<p>この本から得られるプログラミングにおける「視点」「見方」に関するプリンシプルに触れる</p>
+</li>
+<li>
+<p>紹介した「視点」をもとに実際に問題を解いてみる</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <img src="./principle.jpeg" style="border:none;box-shadow:none;">
+<p>どんな本？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>プリンシプルとは？</p>
+<p>プログラミングの指針となる「前提」「原則」</p>
+<p>「思想」「習慣」「視点」「手法」「法則」のこと</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>プログラミング言語の文法を覚えて、コードは書けるようになったけれど、いまひとつ「よいコード」にならない…</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p class="fragment"><span style="font-size:30px;">書いたコードを修正すると、予想外のところに影響が出る</span></p>
+<p class="fragment"><span style="font-size:30px;">書いたコードに機能を追加しようとしても、いったいどこを修正すればよいのかわからない</span></p>
+<p class="fragment"><span style="font-size:30px;">書いたコードに機能を追加しようとしても、まったくその余地がない</span></p>
+<p class="fragment"><span style="font-size:30px;">書いたコードに仕様変更が入ると、その部分がすべて書き直しとなる</span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>成長の「王道」を知ることによって、技術の習得が早く、深くなる。</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>※抽象度が高い普遍的なtipsが多い</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>読んだ中で実際に今までに感じたことと絡めた内容いくつかピックアップ</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>???</p>
+<div>
+<img src="./readableCode.jpg" style="border:none;box-shadow:none;opacity:0.06">
+</div>
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <ol>
+<li>コードを書く際に最も優先するべきことは？</li>
+</ol>
+
+            </section>
+        
+            <section >
+                <p>拡張性、再利用性？</p>
+
+            </section>
+        
+            <section >
+                <p>影響範囲を閉じ込める？</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>「読みやすさ」が最も重要</p>
+<p class="fragment">書く時間　＜　読む時間</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h1>命名は最重要課題</h1>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p class="fragment">コードを通じて、プログラマ同士がコミュニケーションするための最大の場</p>
+<p class="fragment">名前には最大限の配慮がなされるべき</p>
+<p class="fragment">コードを読む人へのUI</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>
+<p>名前は、発音可能なものにする</p>
+</li>
+<li>
+<p>名前は、検索可能なものにする</p>
+</li>
+<li>
+<p>名前は、「効果」と「目的」を説明する</p>
+</li>
+<li>
+<p>名前には、より多くの情報を詰め込むようにする。</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <p>例</p>
+<p>『音声を使ってソフトウェアを操作する機能』</p>
+<p>を命名してみよう</p>
+
+            </section>
+        
+            <section >
+                <p>HINT: ループバックチェック</p>
+<p>内容の説明文から名前を考えたら、その名前から内容を推測できるか確認する</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment">音声認識機能</p>
+<p class="fragment">×</p>
+<p class="fragment">音声を認識して、それで「操作する」という部分が伝わらない。よって、「音声でデータを入力する機能」と受け取られかねない。</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment">音声操作機能</p>
+<p class="fragment">×</p>
+<p class="fragment">「音声」と「操作」の関係が伝わりません。よって、「音声によって操作する機能」ではなく、「音声を操作する機能」と受け取られかねません。</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment">音声コントロール機能</p>
+<p class="fragment">△</p>
+<p class="fragment">コントロールという単語には「コピーコントロール」のような使い方もあります。よって、「音声によって操作する機能」ではなく、「音声を制限する機能」と受け取られかねません</p>
+
+            </section>
+        
+            <section >
+                <p class="fragment">音声命令機能</p>
+<p class="fragment">○</p>
+<p class="fragment">「音声を操作する」「音声に対して操作をする」という誤解がほぼなくなります。ただし、この名前でも、「命令」が、「入力音声」ではなく、「出力音声」にかかる、と解釈されてしまう可能性はあります。</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>2. ポリシーと実装は混ぜない</h3>
+<p>ポリシーモジュール…そのソフトウェアの前提に依存する、ビジネスロジックや、その他のモジュールに対する引数の選択を行う部分</p>
+<p>実装モジュール…そのソフトウェアの前提に依存しない、独立したロジック部分</p>
+<p>実装モジュールは再利用可能にする。</p>
+<p>ポリシーモジュールは特定の場合にあわせる。</p>
+<p>ポリシーモジュールは実装モジュールの集合</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h3>3. 対象原理</h3>
+<p>(7つの設計原理〜コード妥当性レビュー観点〜)</p>
+<p>「形の対称性にこだわる」という原理</p>
+<ul>
+<li>読む時に予測がつく</li>
+<li>考慮漏れを防ぐ</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>例</p>
+<pre><code class="language-javascript">
+const TYPE = {
+  RIGHT : 0,
+  LEFT  : 1,
+  CENTER: 2
+}
+
+if(deciceType ===  TYPE.RIGHT){
+  //
+}else if(decideType === TYPE.LEFT){
+  //
+}else{//←CENTERをの時を表しているがTYPEの定義が離れていると
+      //この処理がどの場合に通るか一目ではわからない
+}
+
 </code></pre>
 
             </section>
@@ -83,7 +384,8 @@
     
         <section >
             
-            <p>この本の説明</p>
+            <h3>４. データはロジックよりも御し易い</h3>
+<p>人間にとって、手続きロジックは、簡単には理解することができません。一方、データ構造は、複雑なものでも比較的簡単に理解することができる。</p>
 
             </section>
     
@@ -93,32 +395,149 @@
     
         <section >
             
-            <p>本発表で伝えること</p>
+            <pre><code class="language-javascript">let value
+
+switch (type) {
+  case 'boolean':{
+    value = true
+    break
+  }
+  case 'number':{
+    value = 1
+    break
+  }
+  case 'string':{
+    value = &quot;STRING&quot;
+    break
+  default :{
+    value = null
+    break
+  }
+  }
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <pre><code class="language-javascript">const valueInitializer = {
+  boolean: true,
+  number: 1,
+  string: &quot;STRING&quot;,
+} 
+
+let value; 
+
+value = valueInitializer[type]
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>難点も存在する</p>
+<p><code class="fragment">let value = valueInitializer[type]</code></p>
+<p class="fragment">is どこ？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p class="fade-out">一連の処理はまとめて書く。</p>
+<p>離れているならコメントを残す。</p>
+
+            </section>
+    
+
+
+
+    
+    <section>
+        <section >
+            <h3>5.驚き最小の原則（UNIX思想⑩）</h3>
+<p>使う人に驚きが少ないようなインターフェースを設計する</p>
+<p><span style="font-size:20px;">馴染みがあるものは、既知のものであるという期待を高めるだけに、裏切られた時の失望が大きくなります。ほとんど同じものを作るくらいなら、まったく異なるものを作った方が、ユーザーにとっては親切となる</span></p>
+
+            </section>
+        
+            <section >
+                <p>実話</p>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section >
+            
+            <p><code>getSimply()</code></p>
+<p>id指定してそのid情報取得</p>
+<p><code>postSheetCore()</code></p>
+<p>シートの保存返り値に保存された時に発行されたidが帰ってくる</p>
+<p><code>postSimply()</code></p>
+<p>検索条件が複雑なものやお気に入り登録など簡単なpostの時に使用される</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p><code>postSimply()</code> ←検索をかけるときはms2.0ではbodyを利用するためにpostで行う</p>
+<p><code>getSimply()</code>のように返り値は検索条件に当てはまるエンティティの情報が得られる。。。</p>
+<p>と思い込んだ</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>戻り値はリクエストが成功したかどうかを表すbooleanだった…</p>
+<p class="fragment">↑時間を取られた</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <h2>まとめ</h2>
 <ul>
-<li>
-<p>まず意識することを伝えて実際に描いてもらう</p>
+<li>コードを書くときは読みやすさを最優先
 <ul>
-<li>ああああ</li>
-</ul>
-</li>
-<li>
-<p>同様に他のことを説明して同じ題材で書いてもらう</p>
-<ul>
-<li>どっちが良いか話し合ってもらう</li>
-</ul>
-</li>
-<li>
-<p>発表　オチによりよりやり方を見つけましょう結論付ける</p>
-</li>
-<li>
-<p>おまけ</p>
-<ul>
-<li>
-<p>プログラマに課金することが重要</p>
-</li>
+<li>命名は最優先課題</li>
+<li>対象原理()</li>
 <li></li>
 </ul>
 </li>
+<li>ポリシーと実装は混ぜない
+<ul>
+<li>aaaa</li>
+</ul>
+</li>
 </ul>
 
             </section>
@@ -129,33 +548,19 @@
     
         <section >
             
-            <ol>
-<li>
-<p>第３のシステム</p>
-</li>
-<li>
-<p>移植性と開発効率性どっち優先→移植性</p>
-</li>
-</ol>
-
-            </section>
-    
-
-
-
-    
-        <section >
-            
-            <p>相反するもの</p>
+            <p>課題</p>
 <ul>
 <li>
-<p>拡張性の問題と単純な問題（）</p>
+<p>選択したユーザーを対象に位置が近い順にソートする関数の作成を文芸的プログラミングで記述
+意識すること</p>
+<ul>
+<li>拡張性を持たせる</li>
+</ul>
 </li>
 <li>
-<p>よいプログラマはよいコードを書く。偉大なプログラマはよいコードを借りてくる[^1]</p>
+<p>関数は引数とか返り値を指定（型と何を表すのか）</p>
 </li>
 </ul>
-<p>[^1]:注釈テキスト注釈テキスト注釈テキスト</p>
 
             </section>
     
@@ -165,7 +570,7 @@
     
         <section >
             
-            <p>まず〜〜を意識してかく</p>
+            <p>(例)</p>
 
             </section>
     
@@ -175,10 +580,175 @@
     
         <section >
             
-            <p>沈黙は金ソフトウェアは、極力表示出力を抑えるようにします。</p>
-<blockquote>
-<p>上田勲. プリンシプル オブ プログラミング 3年目までに身につけたい 一生役立つ101の原理原則 (Japanese Edition) (p.257). Kindle 版.</p>
-</blockquote>
+            <h3>課題</h3>
+<ul>
+<li>最初の課題
+<ul>
+<li>jsonplace holder 10users 使って近い順にソートかける作業</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>今回はこれを使用します。</p>
+<p><a href="https://jsonplaceholder.typicode.com/users" title="jsonplaceholderusers">jsonplaceholderusers</a></p>
+<pre><code class="language-json"> {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Leanne Graham&quot;,
+    &quot;username&quot;: &quot;Bret&quot;,
+    &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+    &quot;address&quot;: {
+      &quot;street&quot;: &quot;Kulas Light&quot;,
+      &quot;suite&quot;: &quot;Apt. 556&quot;,
+      &quot;city&quot;: &quot;Gwenborough&quot;,
+      &quot;zipcode&quot;: &quot;92998-3874&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;-37.3159&quot;,
+        &quot;lng&quot;: &quot;81.1496&quot;
+      }
+    },
+    &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+    &quot;website&quot;: &quot;hildegard.org&quot;,
+    &quot;company&quot;: {
+      &quot;name&quot;: &quot;Romaguera-Crona&quot;,
+      &quot;catchPhrase&quot;: &quot;Multi-layered client-server neural-net&quot;,
+      &quot;bs&quot;: &quot;harness real-time e-markets&quot;
+    }
+  }
+
+</code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>
+<p>よいプログラマはよいコードを書く。偉大なプログラマはよいコードを借りてくる</p>
+</li>
+<li>
+<p>経験を積んだプログラマは、経験を積んだなりの高級なコードを書きたくなる。その誘惑に負けないようなメンタリティを持つ必要がある</p>
+</li>
+<li>
+<p>早い段階での「速いコード」は設計を破綻させる 部分に対する半端な最適化が、全体の最適化の妨げになる</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul>
+<li>
+<p>コードの必要条件・十分条件</p>
+</li>
+<li>
+<p>「コードを書く」コードを書く</p>
+</li>
+<li>
+<p>より良いやり方を求め続ける</p>
+</li>
+<li>
+<p>1つの仕事をするシンプルなソフトウェアが作成できたら、そこに新機能やオプションを付ける誘惑に負けないようにする</p>
+</li>
+<li>
+<p>プロトタイプを「できるだけ早く」作る、機能仕様書待たない</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <img src="./readableCode.jpg" style="border:none;box-shadow:none;">
+<p>リーダブルコードと何が違った？</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <table>
+<thead>
+<tr>
+<th>違い</th>
+<th style="text-align:center">リーダブルコード</th>
+<th style="text-align:center">本書</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>実例</td>
+<td style="text-align:center">○<br>豊富</td>
+<td style="text-align:center">△<br>ほとんどなし</td>
+</tr>
+<tr>
+<td>内容</td>
+<td style="text-align:center">読みやすいコードを<br>書くためのtips</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size:25px;"> リーダブルコードは読みやすいコードの書き方重視で実例を交えながら</span></p>
+<p><span style="font-size:25px;"></span></p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p class="fragment">プログラマに課金することが重要</p>
+<p class="fragment">ハードウェアやソフトウェアの購入を抑制するのは、経費節減のためです。しかし、設備の費用とプログラマの費用は、比較にならないほど後者が高価</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <p>😍</p>
+
+            </section>
+    
+
+
+
+    
+        <section >
+            
+            <ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6224124"><label class="task-list-item-label" for="task-item-6224124"> 課題（できたら）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-755682"><label class="task-list-item-label" for="task-item-755682"> コピペの部分修正</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4808466"><label class="task-list-item-label" for="task-item-4808466"> リーダブルコードの比較</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9825013"><label class="task-list-item-label" for="task-item-9825013"> ポリシーと実装は混ぜないの例（まとめる）</label></li>
+</ul>
 
             </section>
     
@@ -262,7 +832,7 @@
       controlsLayout: 'bottom-right',
       controlsBackArrows: 'faded',
       progress: true,
-      slideNumber: false,
+      slideNumber: true,
       //#showSlideNumber "all" "print" "speaker"
       hash: true, //# hash: false,
       //# respondToHashChanges: true,
