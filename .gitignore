@@ -1,0 +1,6 @@
+docs/
+export/
+.vscode/
+.DS_Store
+
+.vscode/launch.json
